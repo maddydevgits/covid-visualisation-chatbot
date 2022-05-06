@@ -1,0 +1,4 @@
+﻿low-grade fever,dry cough,fatigue,digestive issues,loss of taste and smell,itchy,painful skin patches,high fever,deeper cough,body aches,breating difficulties,chest discomfort,confusion,unresponsiveness,bluish lips,label
+1,1,1,1,1,1,1,0,0,0,0,0,0,0,0,mild
+0,0,1,0,0,0,0,1,1,1,0,0,0,0,0,moderate
+0,0,1,0,0,0,0,1,1,1,1,1,1,1,1,severe
