@@ -9,12 +9,9 @@ from datetime import datetime
 def app():
     st.title('Vaccination Data Visualisation')
     col1,col2=st.columns(2)
-    d1=(col1.date_input('Select From Date'))
-    d2=(col2.date_input('Select End Date'))
-
+    no_of_days=(col1.text_input('Enter the number of days'))
+    
     if st.button('Get Data'):
-        no_of_days=str(d2-d1)
-        no_of_days=(no_of_days.split(' ')[0])
         response=requests.get('https://disease.sh/v3/covid-19/vaccine/coverage/countries/India?lastdays='+no_of_days+'&fullData=false')
         data=(json.loads(response.text))['timeline']
         cols=list(data.keys())
